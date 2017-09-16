@@ -21,6 +21,8 @@ def animate(i):
         if len(line) > 1:
             xs.append(line)
     ax1.clear()
+    plt.pause(0.05)
+
     ax1.plot(xs)
 
 # NOTE: blit=True means only re-draw the parts that have changed.
