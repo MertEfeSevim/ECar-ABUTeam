@@ -12,7 +12,6 @@ ax1 = fig.add_subplot(1, 2, 1)  # NOTE: First
 ax2 = fig.add_subplot(2, 2, 2)  # NOTE: Second
 ax3 = fig.add_subplot(2, 2, 4)  # NOTE: Third
 
-
 xs = []
 
 
