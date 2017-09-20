@@ -21,7 +21,7 @@ class SubplotAnimation(animation.TimedAnimation):
         ax1.set_xlabel('x')
         ax1.set_ylabel('y')
         self.line1 = Line2D([], [], color='black')
-        self.line1a = Line2D([], [], color='red', linewidth=2)
+        self.line1a = Line2D([], [], color='red', linewidth=9)
         self.line1e = Line2D([], [], color='red', marker='o', markeredgecolor='r')
         ax1.add_line(self.line1)
         ax1.add_line(self.line1a)
@@ -83,5 +83,4 @@ class SubplotAnimation(animation.TimedAnimation):
 
 
 ani = SubplotAnimation()
-# ani.save('test_sub.mp4')
 plt.show()

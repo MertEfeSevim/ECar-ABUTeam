@@ -22,5 +22,5 @@ def init():
     return line,
 
 
-ani = animation.FuncAnimation(fig, animate, np.arange(1, 200), init_func=init, interval=25, blit=True)
+ani = animation.FuncAnimation(fig, animate, np.arange(1, 200), init_func=init, interval=25, blit=False)
 plt.show()
