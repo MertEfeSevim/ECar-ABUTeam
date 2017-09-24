@@ -42,10 +42,10 @@ def animate(i):
 
     ax3.clear()
     ax3.set_xlabel('ycy<3')
-    ax3.set_ylabel('Ycynin aq')
+    ax3.set_ylabel('AtesliMertxxx')
     ax3.plot(xs, color="green")
     ax3.grid(alpha=0.2)
-    plt.tight_layout()
+    fig.tight_layout()
     #plt.savefig("logs.eps") #to save figure
 
 # NOTE: blit=True means only re-draw the parts that have changed,not required for now
