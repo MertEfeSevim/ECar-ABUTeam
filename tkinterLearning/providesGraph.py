@@ -2,8 +2,8 @@ import random  # NOTE: will be deleted when random number giving is not required
 
 import matplotlib.animation as animation
 import matplotlib.pyplot as plt
-from matplotlib import style
 import numpy as np
+from matplotlib import style
 
 style.use('dark_background')
 fig = plt.figure()
@@ -17,12 +17,12 @@ xs = []
 
 def animate(i):
     num = random.randint(45, 500)
-    #for making graph a bit smoother
-    sm_num=np.array(num)
+    # for making graph a bit smoother
+    sm_num = np.array(num)
     smooth_num = np.linspace(sm_num.min(), sm_num.max(), 200)
     xs.append(smooth_num)
 
-    if len(xs) > 20:
+    if len(xs) > 10:
         del xs[0]
         # NOTE: xs should have limited amount of datum for graph to look better
     else:
@@ -41,12 +41,12 @@ def animate(i):
     ax2.grid(alpha=0.2)
 
     ax3.clear()
-    ax3.set_xlabel('ycy<3')
+    ax3.set_xlabel('ASE<3')
     ax3.set_ylabel('AtesliMertxxx')
     ax3.plot(xs, color="green")
     ax3.grid(alpha=0.2)
     fig.tight_layout()
-    #plt.savefig("logs.eps") #to save figure
+    # plt.savefig("logs.eps") #to save figure
 
 # NOTE: blit=True means only re-draw the parts that have changed,not required for now
 # NOTE: interval is refreshment in miliseconds, in this case its one second
@@ -54,5 +54,3 @@ def animate(i):
 
 ani = animation.FuncAnimation(fig, animate, interval=1000)
 plt.show()
-# NOTE: atalay hg
-# NOTE: mert hb
