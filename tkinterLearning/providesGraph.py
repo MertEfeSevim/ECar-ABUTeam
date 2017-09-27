@@ -50,7 +50,7 @@ def animate(i):
 
 # NOTE: blit=True means only re-draw the parts that have changed,not required for now
 # NOTE: interval is refreshment in miliseconds, in this case its one second
-
+#güzel kızmış kanka
 
 ani = animation.FuncAnimation(fig, animate, interval=1000)
 plt.show()
